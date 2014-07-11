@@ -21,15 +21,15 @@ or download the css on github and include in your project.
 ```
 .ht-auto { height: auto; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .ht-auto-ns { height: auto; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .ht-auto-m { height: auto; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .ht-auto-l { height: auto; }
 }
 
