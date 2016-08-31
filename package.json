@@ -1,7 +1,7 @@
 {
   "name": "css-heights",
   "style": "heights.css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "homepage": "http://github.com/mrmrs/css-heights",
   "description": "Css module of single purpose classes for heights",
   "keywords": [
@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.2"
+    "tachyons-cli": "^1.0.4"
   },
   "scripts": {
     "start": "tachyons src/css-heights.css > css/css-heights.css && tachyons src/css-heights.css --minify > css/css-heights.min.css && tachyons src/css-heights.css --generate-docs --package=../../package.json > readme.md"
