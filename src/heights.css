@@ -4,15 +4,15 @@
 
 .ht-auto { height: auto; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .ht-auto-ns { height: auto; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .ht-auto-m { height: auto; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .ht-auto-l { height: auto; }
 }
 
