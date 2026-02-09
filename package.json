@@ -1,38 +1,44 @@
 {
   "name": "css-heights",
-  "style": "heights.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-heights",
-  "description": "Css module of single purpose classes for heights",
+  "version": "2.0.0",
+  "description": "Functional CSS for heights",
+  "style": "dist/heights.css",
+  "main": "dist/heights.css",
+  "exports": {
+    ".": "./dist/heights.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "heights"
+    "heights",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-heights": {
+  "homepage": "https://github.com/mrmrs/css-heights",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-heights.git"
+    "url": "https://github.com/mrmrs/css-heights.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-heights/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-heights/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
